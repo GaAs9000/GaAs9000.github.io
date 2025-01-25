@@ -4,6 +4,5 @@ collection: teaching
 type: "Electrical Engineering"
 permalink: /teaching/teaching-1
 venue: "Zhejiang University, Hangzhou, China"
-date: 2022
-location: "City, Country"
+date: 2022-01-01
 ---
