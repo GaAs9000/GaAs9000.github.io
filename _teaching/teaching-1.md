@@ -10,8 +10,7 @@ location: "Hangzhou, China"
 period: "2022-2026"
 ---
 
-# Bachelor Degree
-**Electrical Engineering**  
-ZJU-UIUC Institute, Zhejiang University  
-Hangzhou, China  
-*2022-2026*
+## Awards and Leadership
+* Outstanding Youth League Branch Secretary, International Campus (2023-2024)
+* Outstanding Youth League Branch Secretary, Zhejiang University University-level Award (2024-2025)
+* Third-Class Scholarship, Zhejiang University (2022-2023)
