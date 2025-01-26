@@ -1,0 +1,83 @@
+.photo-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.photo-item {
+    margin-bottom: 4rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photo-content {
+    padding: 1.5rem;
+}
+
+.photo-header {
+    margin-bottom: 1.5rem;
+}
+
+.photo-title {
+    font-size: 1.8rem;
+    margin: 0 0 1rem;
+    color: #333;
+}
+
+.photo-metadata {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.9rem;
+    
+    .photo-location {
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+    
+    .photo-date {
+        font-style: italic;
+    }
+}
+
+.photo-image {
+    margin: -1.5rem -1.5rem 1.5rem;
+    
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.photo-description {
+    color: #444;
+    line-height: 1.6;
+    
+    p {
+        margin: 0 0 1rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+    .photo-container {
+        margin: 1rem auto;
+    }
+    
+    .photo-title {
+        font-size: 1.5rem;
+    }
+    
+    .photo-metadata {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
