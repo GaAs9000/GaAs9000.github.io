@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="photo-content">
+  <article class="photo-article">
+    <h1>{{ page.title }}</h1>
+    
+    <div class="photo-metadata">
+      <span class="photo-location">{{ page.location }}</span>
+      <span class="photo-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    </div>
+
+    {% if page.image %}
+    <div class="photo-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
+    <div class="photo-description">
+      {{ content }}
+    </div>
+  </article>
+</div>
