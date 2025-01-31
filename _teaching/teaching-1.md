@@ -12,3 +12,6 @@ location: "Hangzhou, China"
 * Outstanding Youth League Branch Secretary, International Campus (2023-2024)
 * Outstanding Youth League Branch Secretary, Zhejiang University University-level Award (2024-2025)
 * Third-Class Scholarship, Zhejiang University (2022-2023)
+* China International College Students' Innovation Contest
+  * Silver Medal (2023)
+  * Bronze Medal (2024)
