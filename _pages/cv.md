@@ -26,7 +26,7 @@ Education
 Work experience
 ======
 * Spring 2025: Teaching Assistant
-  * ZJUI | Zhejiang University-University of Illinois Urbana Champaign Institute
+  * Zhejiang University-University of Illinois Urbana Champaign Institute
   * Duties includes: Graded assignments and tests and documented results into filing system. Helped students through one-to-one and small group tutoring. Led discussion sessions, review sessions, and set up worksheet problems.
   * Supervisor: Prof.Thomas Honold
   
@@ -36,6 +36,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
