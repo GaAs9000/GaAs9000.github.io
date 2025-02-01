@@ -1,18 +1,34 @@
 ---
-layout: archive
-title: "Photo Gallery"
-permalink: /photo/
-author_profile: true
+layout: default
 ---
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery | GaAs9000</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/photo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
 
-{% for post in site.photos reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="photo-container">
+    <article class="photo-item">
+      <header class="photo-header">
+        <h1 class="photo-title">{{ page.title }}</h1>
+        
+        <div class="photo-metadata">
+          {% if page.location %}<span class="photo-location">{{ page.location }}</span>{% endif %}
+          {% if page.date %}<span class="photo-date">{{ page.date | date: "%B %d, %Y" }}</span>{% endif %}
+        </div>
+      </header>
+
+      {% if page.image %}
+      <div class="photo-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      </div>
+      {% endif %}
+
+      <div class="photo-description">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
