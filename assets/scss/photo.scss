@@ -7,67 +7,82 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+// 页面标题样式
+.page__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--accent-color);
+}
+
 // 照片容器样式
 .photo-container {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 2rem;
+    max-width: 1600px; // 增加最大宽度
+    margin: 4rem auto;
+    padding: 0 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); // 增加每个卡片的最小宽度
+    gap: 3rem; // 增加间距
 }
 
 // 照片卡片样式
 .photo-item {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background: var(--card-background);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px var(--shadow-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 25px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     animation: fadeInUp 0.6s ease-out forwards;
     opacity: 0;
     
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     }
 }
 
 // 照片内容区域
 .photo-content {
-    padding: 1.8rem;
+    padding: 2.5rem;
 }
 
 // 照片标题区域
 .photo-header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center; // 居中标题
 }
 
 // 照片标题样式
 .photo-title {
-    font-size: 1.6rem;
+    font-size: 2rem; // 增大标题字号
     font-weight: 600;
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
     color: var(--text-primary);
     line-height: 1.3;
+    text-align: center; // 居中标题
 }
 
 // 元数据样式
 .photo-metadata {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; // 居中元数据
     align-items: center;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1.1rem; // 增大字号
+    gap: 2rem; // 增加间距
     
     .photo-location {
         display: flex;
         align-items: center;
         
         i {
-            margin-right: 0.5rem;
+            margin-right: 0.8rem;
             color: var(--accent-color);
+            font-size: 1.2rem; // 增大图标
         }
     }
     
@@ -79,13 +94,13 @@
 
 // 图片容器样式
 .photo-image {
-    margin: -1.8rem -1.8rem 1.8rem;
+    margin: -2.5rem -2.5rem 2.5rem;
     position: relative;
     overflow: hidden;
     
     img {
         width: 100%;
-        height: 250px;
+        height: 350px; // 增加图片高度
         object-fit: cover;
         transition: transform 0.5s ease;
         
@@ -99,10 +114,12 @@
 .photo-description {
     color: var(--text-primary);
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1.1rem; // 增大字号
+    text-align: center; // 居中描述文本
+    padding: 0 1.5rem;
     
     p {
-        margin: 0 0 1rem;
+        margin: 0 0 1.5rem;
         
         &:last-child {
             margin-bottom: 0;
@@ -114,7 +131,7 @@
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -123,24 +140,36 @@
 }
 
 // 响应式设计
+@media (max-width: 1200px) {
+    .photo-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        padding: 0 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .photo-container {
         grid-template-columns: 1fr;
-        margin: 1.5rem auto;
-        padding: 0 1rem;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+    }
+    
+    .page__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
     
     .photo-title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     
     .photo-image img {
-        height: 200px;
+        height: 300px;
     }
     
     .photo-metadata {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 }
 
@@ -159,6 +188,10 @@
     
     .photo-description {
         color: #bdc3c7;
+    }
+    
+    .page__title {
+        border-bottom-color: #3498db;
     }
 }
 
