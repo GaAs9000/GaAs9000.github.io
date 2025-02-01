@@ -8,10 +8,14 @@
     margin-bottom: 4rem;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* 移除阴影效果 */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
+    /* 添加细边框来分隔内容 */
+    border: 1px solid #eee;
 }
 
+/* 其余样式保持不变 */
 .photo-content {
     padding: 1.5rem;
 }
