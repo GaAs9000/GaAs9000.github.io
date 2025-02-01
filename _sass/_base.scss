@@ -75,14 +75,12 @@ del a {
 }
 
 /* reduce orphans and widows when printing */
-
 p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
   orphans: 3;
   widows: 3;
 }
 
 /* abbreviations */
-
 abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
@@ -91,7 +89,6 @@ abbr[data-original-title] {
 }
 
 /* blockquotes */
-
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
@@ -110,7 +107,6 @@ blockquote {
 }
 
 /* links */
-
 a {
   &:focus {
     @extend %tab-focus;
@@ -123,7 +119,6 @@ a {
 }
 
 /* code */
-
 tt, code, kbd, samp, pre {
   font-family: $monospace;
 }
@@ -152,7 +147,6 @@ td > code {
 }
 
 /* horizontal rule */
-
 hr {
   display: block;
   margin: 1em 0;
@@ -161,7 +155,6 @@ hr {
 }
 
 /* lists */
-
 ul li,
 ol li {
   margin-bottom: 0.5em;
@@ -172,19 +165,17 @@ li ol {
   margin-top: 0.5em;
 }
 
-/*
-   Media and embeds
+/* Media and embeds
    ========================================================================== */
 
 /* Figures and images */
-
 figure {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
 
@@ -233,7 +224,6 @@ figure {
 }
 
 /* Figure captions */
-
 figcaption {
   margin-bottom: 0.5em;
   color: mix(#fff, $text-color, 25%);
@@ -254,16 +244,12 @@ figcaption {
   }
 }
 
-
 /* Fix IE9 SVG bug */
-
 svg:not(:root) {
   overflow: hidden;
 }
 
-
-/*
-   Navigation lists
+/* Navigation lists
    ========================================================================== */
 
 /**
@@ -305,8 +291,7 @@ nav {
   }
 }
 
-/*
-   Global animation transition
+/* Global animation transition
    ========================================================================== */
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
