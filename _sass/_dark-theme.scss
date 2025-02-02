@@ -66,11 +66,26 @@ body {
 
 // 主题切换按钮样式
 .theme-toggle {
+    position: fixed;  // 固定位置
+    top: 1rem;       // 距离顶部
+    right: 1rem;     // 距离右侧
     background: transparent;
     border: none;
     padding: 0.5rem;
     cursor: pointer;
     color: var(--text-primary);
+    z-index: 1000;   // 确保按钮在其他元素之上
+    border-radius: 50%;  // 圆形按钮
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+    &:hover {
+        background: var(--bg-secondary);
+    }
     
     svg {
         width: 20px;
@@ -89,6 +104,17 @@ body {
     }
     .moon-icon {
         display: block;
+    }
+}
+
+// 添加媒体查询以适应移动设备
+@media screen and (max-width: 768px) {
+    .theme-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.3rem;
+        width: 35px;
+        height: 35px;
     }
 }
 
