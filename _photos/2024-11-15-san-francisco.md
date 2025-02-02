@@ -6,4 +6,3 @@ date: 2024-11-15
 image: /assets/images/gallery/San-Francisco-2024.png
 ---
 
-这里是关于这张照片的描述。
