@@ -4,6 +4,12 @@ layout: default
 
 <div class="photo-content">
   <article class="photo-article">
+    <div class="photo-metadata">
+      <h1 class="photo-title">{{ page.title }}</h1>
+      <span class="photo-location">{{ page.location }}</span>
+      <span class="photo-date">{{ page.date | date: "%B %d, %Y" }}</span>
+    </div>
+    
     {% if page.image %}
     <div class="photo-image">
       <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="hover-effect">
