@@ -39,3 +39,10 @@
         });
     });
 </script>
+
+<script>
+    // 立即加载保存的主题
+    const savedTheme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
