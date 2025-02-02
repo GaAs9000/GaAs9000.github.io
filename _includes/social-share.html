@@ -10,4 +10,60 @@
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ base_path }}{{ page.url }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn--linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="javascript:void(0);" class="btn btn--weixin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} WeChat" onclick="handleWeixinShare();"><i class="fab fa-weixin" aria-hidden="true"></i><span> WeChat</span></a>
 </section>
+
+<!-- 添加微信分享提示框 -->
+<div id="weixinQR" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border-radius:5px; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:1000;">
+  <div id="qrcode"></div>
+  <p style="text-align:center; margin-top:10px;">使用微信扫描二维码分享</p>
+  <button onclick="hideWeixinQR();" style="display:block; margin:10px auto; padding:5px 15px; border-radius:3px; border:none; background:#4CAF50; color:white; cursor:pointer;">关闭</button>
+</div>
+
+<!-- 添加必要的 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+function handleWeixinShare() {
+    // 检测是否在移动设备上
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // 移动设备上显示提示
+        alert('请点击右上角"..."按钮，选择"分享到朋友圈"或"分享给朋友"');
+    } else {
+        // 桌面设备上显示二维码
+        showWeixinQR();
+    }
+}
+
+function showWeixinQR() {
+    var qrDiv = document.getElementById('weixinQR');
+    if (!qrDiv.querySelector('#qrcode div')) {
+        new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href,
+            width: 128,
+            height: 128
+        });
+    }
+    qrDiv.style.display = 'block';
+}
+
+function hideWeixinQR() {
+    document.getElementById('weixinQR').style.display = 'none';
+}
+</script>
+
+<style>
+.btn--weixin {
+    background-color: #7bb32e;
+    color: #fff !important;
+}
+.btn--weixin:hover {
+    background-color: #6b9a29;
+}
+#weixinQR {
+    text-align: center;
+}
+#weixinQR button:hover {
+    background: #45a049;
+}
+</style>
