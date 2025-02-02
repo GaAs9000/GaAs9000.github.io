@@ -1,41 +1,10 @@
 ---
-layout: default
-title: "Photos"
-permalink: /photos/
+layout: archive
+title: "Photo Gallery"
+permalink: /photo/
 author_profile: true
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
-
-  <div class="photo-container">
-    {% for photo in site.photos %}
-    <article class="photo-item">
-      <header class="photo-header">
-        <h1 class="photo-title"><a href="{{ photo.url | relative_url }}">{{ photo.title }}</a></h1>
-        
-        <div class="photo-metadata">
-          {% if photo.location %}<span class="photo-location">{{ photo.location }}</span>{% endif %}
-          {% if photo.date %}<span class="photo-date">{{ photo.date | date: "%B %d, %Y" }}</span>{% endif %}
-        </div>
-      </header>
-
-      {% if photo.image %}
-      <div class="photo-image">
-        <a href="{{ photo.url | relative_url }}">
-          <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
-        </a>
-      </div>
-      {% endif %}
-
-      <div class="photo-description">
-        {{ photo.content }}
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</div>
+{% for post in site.photos reversed %}
+  {% include archive-single.html %}
+{% endfor %}
