@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "Photos"
+permalink: /photos/
+author_profile: true
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -10,25 +13,29 @@ layout: default
   {% include sidebar.html %}
 
   <div class="photo-container">
+    {% for photo in site.photos %}
     <article class="photo-item">
       <header class="photo-header">
-        <h1 class="photo-title">{{ page.title }}</h1>
+        <h1 class="photo-title"><a href="{{ photo.url | relative_url }}">{{ photo.title }}</a></h1>
         
         <div class="photo-metadata">
-          {% if page.location %}<span class="photo-location">{{ page.location }}</span>{% endif %}
-          {% if page.date %}<span class="photo-date">{{ page.date | date: "%B %d, %Y" }}</span>{% endif %}
+          {% if photo.location %}<span class="photo-location">{{ photo.location }}</span>{% endif %}
+          {% if photo.date %}<span class="photo-date">{{ photo.date | date: "%B %d, %Y" }}</span>{% endif %}
         </div>
       </header>
 
-      {% if page.image %}
+      {% if photo.image %}
       <div class="photo-image">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        <a href="{{ photo.url | relative_url }}">
+          <img src="{{ photo.image | relative_url }}" alt="{{ photo.title }}">
+        </a>
       </div>
       {% endif %}
 
       <div class="photo-description">
-        {{ content }}
+        {{ photo.content }}
       </div>
     </article>
+    {% endfor %}
   </div>
 </div>
