@@ -45,7 +45,6 @@ profiles:
 interests:
   - Artificial Intelligence
   - Machine Learning
-  - Power System Optimization
 
 education:
   - area: B.S. in Electrical Engineering
