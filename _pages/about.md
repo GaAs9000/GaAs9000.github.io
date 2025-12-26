@@ -17,42 +17,123 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Jiashen Ren is pursuing his dual bachelor's degrees from Zhejiang University and the University of Illinois Urbana-Champaign, majoring in Electrical Engineering. And he enjoys photography and traveling in his free time.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My research interests include:
+- Artificial Intelligence
+- Machine Learning
+
+📄 [Download my CV](files/resume.pdf)
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.12*: &nbsp;Paper on arXiv (see Publications below).
+
+<span class='anchor' id='publications'></span>
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/publications/preprint.jpg' alt="preprint" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[T-SKM-Net: Trainable Neural Network Framework for Linear Constraint Satisfaction via Sampling Kaczmarz-Motzkin Method](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DbFv3OIAAAAJ&citation_for_view=DbFv3OIAAAAJ:u5HHmVD_uO8C)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+H Zhu, Y Zhang, **Jiashen Ren**, Q Hou
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+*arXiv preprint, 2025*
+
+<span class='show_paper_citations' data='DbFv3OIAAAAJ:u5HHmVD_uO8C'></span>
+
+Linear constraint satisfaction via a trainable neural framework with a sampling Kaczmarz-Motzkin method.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<span class='anchor' id='projects'></span>
+
+# 🚀 Projects
+
+- **[Pandas](https://github.com/pandas-dev/pandas)**: Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+
+- **[PyTorch](https://github.com/pytorch/pytorch)**: PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+
+- **[scikit-learn](https://github.com/scikit-learn/scikit-learn)**: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+
+<span class='anchor' id='photography'></span>
+
+# 📷 Photography
+
+### 📍 San Diego, California, USA (November 2024)
+
+Fall Break 2024 in San Diego, California, USA
+
+<div class="photo-gallery">
+  <img src="images/photo/SanDiego/featured.jpg" alt="San Diego featured">
+  <img src="images/photo/SanDiego/San Diego_1.png" alt="San Diego 1">
+  <img src="images/photo/SanDiego/San Diego_2.png" alt="San Diego 2">
+  <img src="images/photo/SanDiego/San Diego_3.png" alt="San Diego 3">
+  <img src="images/photo/SanDiego/San Diego_4.png" alt="San Diego 4">
+</div>
+
+<span class='anchor' id='experience'></span>
+
+# 💼 Experience
+
+### Teaching Assistant
+**Zhejiang University-University of Illinois Urbana Champaign Institute** | *Feb 2025 - Jun 2025*
+
+Supervisor: [Prof. Thomas Honold](https://zjui.intl.zju.edu.cn/en/node/775)
+
+Responsibilities:
+- Graded assignments and tests and documented results into filing system
+- Helped students through one-to-one and small group tutoring
+- Led discussion sessions, review sessions, and set up worksheet problems
+
+<span class='anchor' id='honors-and-awards'></span>
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+### Scholarships
+- *2023-2024* **Third-Class Scholarship**, Zhejiang University
+- *2022-2023* **Third-Class Scholarship**, Zhejiang University
+
+### Competition Awards
+- *2024* **Bronze Medal**, China International College Students' Innovation Contest
+- *2023* **Silver Medal**, China International College Students' Innovation Contest
+
+### Leadership Awards
+- *2024-2025* **Outstanding Youth League Branch Secretary**, Zhejiang University University-level Award
+- *2023-2024* **Outstanding Youth League Branch Secretary**, International Campus, Zhejiang University
+
+### Certificates
+- *2023.11* **[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)**, Coursera
+  - Studied foundational concepts of neural networks and deep learning, including building, training, and applying fully connected deep neural networks 
+
+<span class='anchor' id='educations'></span>
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+### Zhejiang University
+**B.S. in Electrical Engineering** | *2022.09 - 2026.06 (expected)*
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+Dual Degree, Zhejiang University - University of Illinois Urbana-Champaign (ZJU-UIUC) Joint Institute
+
+**Awards and Leadership:**
+- Outstanding Youth League Branch Secretary, International Campus (2023-2024)
+- Outstanding Youth League Branch Secretary, Zhejiang University University-level Award (2024-2025)
+- Third-Class Scholarship, Zhejiang University (2022-2023)
+- Third-Class Scholarship, Zhejiang University (2023-2024)
+- China International College Students' Innovation Contest, Silver Medal (2023)
+- China International College Students' Innovation Contest, Bronze Medal (2024)
+
+### University of Illinois at Urbana-Champaign
+**B.S. in Electrical Engineering** | *2022.09 - 2026.06 (expected)*
+
+Dual Degree, Zhejiang University - University of Illinois Urbana-Champaign (ZJU-UIUC) Joint Institute
+
+**Courses included:**
+- Digital Systems Laboratory
+- Computing Systems and Programming
+- Algorithm Design and Practice
+- Digital Signal Processing
+- Machine Learning
+- Power and Energy Systems 
