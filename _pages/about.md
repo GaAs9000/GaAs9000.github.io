@@ -52,11 +52,14 @@ Linear constraint satisfaction via a trainable neural framework with a sampling 
 
 # 🚀 Projects
 
-- **[Pandas](https://github.com/pandas-dev/pandas)**: Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+- **ECE385: FPGA Handwriting Number Recognition**
+  - Designed a 3-layer MLP network (1024-32-10) entirely at RTL level in SystemVerilog.
+  - Engineered an FSM-based data pipeline for real-time image capture (OV7670) and processing.
+  - Achieved timing closure at 50MHz clock frequency.
 
-- **[PyTorch](https://github.com/pytorch/pytorch)**: PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
-
-- **[scikit-learn](https://github.com/scikit-learn/scikit-learn)**: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+- **ECE 364: Rock, Paper, Scissors Image Classification**
+  - Implemented ConvNeXtV2 model with 100% accuracy on validation/test sets.
+  - Analyzed model learning process using GradCAM heatmaps.
 
 <span class='anchor' id='photography'></span>
 
@@ -79,14 +82,21 @@ Fall Break 2024 in San Diego, California, USA
 # 💼 Experience
 
 ### Teaching Assistant
-**Zhejiang University-University of Illinois Urbana Champaign Institute** | *Feb 2025 - Jun 2025*
+**MATH285 (Introduction to Differential Equations)** | *Jan 2025 - May 2025*
 
-Supervisor: [Prof. Thomas Honold](https://zjui.intl.zju.edu.cn/en/node/775)
+**MATH241 (Calculus III)** | *Sep 2025 - Dec 2025*
 
-Responsibilities:
-- Graded assignments and tests and documented results into filing system
-- Helped students through one-to-one and small group tutoring
-- Led discussion sessions, review sessions, and set up worksheet problems
+### Research Assistant
+**SRTP Research: Constraint-Oriented Neural Networks** | *Feb 2025 - Present*
+*Supervisor: Prof. Qingchun Hou (ZJU-UIUC Institute)*
+- Developing a scalable, physics-informed deep learning framework for power system optimization.
+- Designing a novel constraint satisfaction layer inspired by PINNs.
+- Training a GNN to decompose large-scale power grids.
+
+**Summer Research: DiffSinger-based Voice Enhancement** | *Jun 2023 - Aug 2023*
+*Supervisor: Prof. Zhou Zhao (Zhejiang University)*
+- Reproduced the DiffSinger model and mastered diffusion probabilistic models.
+- Conducted in-depth study of noise scheduling and denoising networks.
 
 <span class='anchor' id='honors-and-awards'></span>
 
@@ -97,12 +107,14 @@ Responsibilities:
 - *2022-2023* **Third-Class Scholarship**, Zhejiang University
 
 ### Competition Awards
+### Competition Awards
+- *2024* **Honorable Mention**, The Mathematical Contest in Modeling (MCM)
 - *2024* **Bronze Medal**, China International College Students' Innovation Contest
 - *2023* **Silver Medal**, China International College Students' Innovation Contest
 
 ### Leadership Awards
-- *2024-2025* **Outstanding Youth League Branch Secretary**, Zhejiang University University-level Award
-- *2023-2024* **Outstanding Youth League Branch Secretary**, International Campus, Zhejiang University
+- *2024-2025* **Outstanding Youth League Branch Secretary**, Zhejiang University
+- *2022-2024* **Outstanding Youth League Branch Secretary**, International Campus, Zhejiang University
 
 ### Certificates
 - *2023.11* **[Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)**, Coursera
@@ -117,23 +129,19 @@ Responsibilities:
 
 Dual Degree, Zhejiang University - University of Illinois Urbana-Champaign (ZJU-UIUC) Joint Institute
 
-**Awards and Leadership:**
-- Outstanding Youth League Branch Secretary, International Campus (2023-2024)
-- Outstanding Youth League Branch Secretary, Zhejiang University University-level Award (2024-2025)
-- Third-Class Scholarship, Zhejiang University (2022-2023)
-- Third-Class Scholarship, Zhejiang University (2023-2024)
-- China International College Students' Innovation Contest, Silver Medal (2023)
-- China International College Students' Innovation Contest, Bronze Medal (2024)
+**GPA: 3.98/4.3**
 
 ### University of Illinois at Urbana-Champaign
 **B.S. in Electrical Engineering** | *2022.09 - 2026.06 (expected)*
 
 Dual Degree, Zhejiang University - University of Illinois Urbana-Champaign (ZJU-UIUC) Joint Institute
 
+**GPA: 3.58/4.0**
+
 **Courses included:**
-- Digital Systems Laboratory
-- Computing Systems and Programming
-- Algorithm Design and Practice
-- Digital Signal Processing
-- Machine Learning
-- Power and Energy Systems 
+- Data Mining
+- Digital Systems With FPGA
+- Programming Methods for ML
+- Optimization
+- Trustworthy machine learning
+- Embodied Artificial Intelligence 
