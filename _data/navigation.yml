@@ -6,17 +6,8 @@ main:
   - title: "Publications"
     url: "/#publications"
 
-  - title: "Projects"
-    url: "/#projects"
-
-  - title: "Photography"
-    url: "/#photography"
-
   - title: "Experience"
     url: "/#experience"
 
-  - title: "Honors and Awards"
-    url: "/#honors-and-awards"
-
-  - title: "Educations"
-    url: "/#educations"
+  - title: "Education"
+    url: "/#education"
