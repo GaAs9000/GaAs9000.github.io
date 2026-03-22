@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jiashen Ren"
-description              : "Jiashen Ren is pursuing his dual bachelor's degrees from Zhejiang University and the University of Illinois Urbana-Champaign, majoring in Electrical Engineering."
+description              : "Jiashen Ren is a Ph.D. student in Data Science at the AML Lab, City University of Hong Kong. His background is dual B.S. degrees in Electrical Engineering from ZJU and UIUC."
 repository               : "GaAs9000/jiashen.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jiashen Ren"
   avatar           : "images/profile.jpg"
-  bio              : "ZJU-UIUC Institute"
-  location         : "Haining, China"
+  bio              : "Ph.D. student (Data Science), AML Lab @ CityU"
+  location         : "Hong Kong SAR"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DbFv3OIAAAAJ&hl=zh-CN"
