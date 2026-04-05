@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jiashen Ren"
   avatar           : "images/profile.jpg"
-  bio              : "Ph.D. student (Data Science), AML Lab @ CityU"
+  bio              : "Ph.D. student<br>AML Lab @ CityU"
   location         : "Hong Kong SAR"
   employer         :
   pubmed           : 
