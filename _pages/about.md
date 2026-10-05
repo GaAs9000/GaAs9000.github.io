@@ -1,99 +1,128 @@
 ---
 permalink: /
+layout: home
 title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<header class="hero">
+  <div class="hero__text">
+    <h1 class="hero__name">{{ site.author.name }}</h1>
+    <p class="hero__role">Ph.D. Student in Data Science</p>
+    <div class="hero__meta">
+      <span>{% include icon.html name="landmark" %}AML Lab, City University of Hong Kong</span>
+      <span>{% include icon.html name="pin" %}{{ site.author.location }}</span>
+    </div>
+    <div class="bio">
+      <p>I am a Ph.D. student in Data Science at City University of Hong Kong, advised by <a href="https://zhaoxyai.github.io/">Prof. Xiangyu Zhao</a> in the <a href="https://aml-cityu.github.io/">Applied Machine Learning Lab</a>. My research interests are human-centered AI and LLM security. Recently, I have been studying persona control in LLM-based user simulation.</p>
+      <p>Previously, I received dual B.S. degrees in Electrical Engineering from Zhejiang University and the University of Illinois Urbana-Champaign, where I worked with <a href="https://person.zju.edu.cn/en/houqingchun">Prof. Qingchun Hou</a> on constraint-aware neural networks.</p>
+    </div>
+    <div class="links">
+      <a href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %}Email</a>
+      <a href="{{ site.author.googlescholar }}">{% include icon.html name="scholar" %}Google Scholar</a>
+      <a href="https://github.com/{{ site.author.github }}">{% include icon.html name="github" %}GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{% include icon.html name="linkedin" %}LinkedIn</a>
+      <a href="{{ '/files/resume.pdf' | relative_url }}">{% include icon.html name="file" %}CV</a>
+    </div>
+  </div>
+  <img class="hero__photo" src="{{ '/images/profile-portrait.jpg' | relative_url }}" alt="{{ site.author.name }}">
+</header>
 
-<span class='anchor' id='about-me'></span>
+<section class="section" id="news">
+  <h2 class="section__title">{% include icon.html name="news" %}News</h2>
+  <ul class="rows">
+    <li class="row row--news">
+      <span class="row__date">Sep 2026</span>
+      <p class="row__main">New preprint on persona control in LLM user simulation, now on <a href="https://arxiv.org/abs/2609.35036">arXiv</a>.</p>
+    </li>
+    <li class="row row--news">
+      <span class="row__date">Aug 2026</span>
+      <p class="row__main">Started my Ph.D. at the <a href="https://aml-cityu.github.io/">AML Lab</a>, City University of Hong Kong.</p>
+    </li>
+    <li class="row row--news">
+      <span class="row__date">Mar 2026</span>
+      <p class="row__main">T-SKM-Net published in the <a href="https://ojs.aaai.org/index.php/AAAI/article/view/38459">AAAI 2026</a> proceedings.</p>
+    </li>
+  </ul>
+</section>
 
-Jiashen Ren is a Ph.D. student in **Data Science** at the [Applied Machine Learning Lab (AML Lab)](https://aml-cityu.github.io/), Department of Data Science, [City University of Hong Kong](https://www.cityu.edu.hk/), advised by [Prof. Xiangyu Zhao](https://zhaoxyai.github.io/). He received dual Bachelor of Science degrees in Electrical Engineering from Zhejiang University and the University of Illinois at Urbana-Champaign through the ZJU-UIUC Institute, where he worked with [Prof. Qingchun Hou](https://person.zju.edu.cn/en/houqingchun). His research interests include **Human-centered Artificial Intelligence** and **LLM Security**.
+<section class="section" id="publications">
+  <h2 class="section__title">{% include icon.html name="book" %}Publications</h2>
+  {% for pub in site.data.publications %}
+  <article class="pub">
+    <a class="pub__thumb" href="{{ pub.url }}">
+      <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+    </a>
+    <div>
+      <h3 class="pub__title"><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
+      <p class="pub__authors">{{ pub.authors | replace: site.author.name, "<strong>Jiashen Ren</strong>" }}</p>
+      <p class="pub__venue"><span class="pub__tag">{{ pub.tag }}</span>{{ pub.venue }}</p>
+      <p class="pub__summary">{{ pub.summary }}</p>
+      <div class="pub__links">
+        {% for link in pub.links %}<a href="{{ link.url }}">{% include icon.html name=link.icon %}{{ link.name }}</a>{% endfor %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
 
-📄 [CV](files/resume.pdf)
+<section class="section" id="education">
+  <h2 class="section__title">{% include icon.html name="scholar" %}Education</h2>
+  <ul class="rows">
+    <li class="row">
+      <p class="row__main">City University of Hong Kong</p>
+      <span class="row__date">Aug 2026 – Present</span>
+      <p class="row__sub">Ph.D. in Data Science</p>
+    </li>
+    <li class="row">
+      <p class="row__main">Zhejiang University &amp; University of Illinois Urbana-Champaign</p>
+      <span class="row__date">Sep 2022 – May 2026</span>
+      <p class="row__sub">Dual B.S. in Electrical Engineering</p>
+    </li>
+  </ul>
+</section>
 
+<section class="section" id="experience">
+  <h2 class="section__title">{% include icon.html name="flask" %}Research Experience</h2>
+  <ul class="rows">
+    <li class="row">
+      <p class="row__main">Constraint-Oriented Neural Networks for Power-System Optimization</p>
+      <span class="row__date">Feb 2025 – Aug 2026</span>
+      <p class="row__sub">ZJU-UIUC Institute, with Prof. Qingchun Hou</p>
+    </li>
+    <li class="row">
+      <p class="row__main">DiffSinger-Based Voice Enhancement and Synthesis</p>
+      <span class="row__date">Jun 2023 – Aug 2023</span>
+      <p class="row__sub">Zhejiang University, with Prof. Zhou Zhao</p>
+    </li>
+  </ul>
+</section>
 
-# 🔥 News
-- *2026.09*: &nbsp;📄 Preprint **Persona Following Is Not Selective Control** is now on [arXiv](https://arxiv.org/abs/2609.35036).
-- *2026.03*: &nbsp;🎉 **T-SKM-Net** published in [AAAI 2026 proceedings](https://ojs.aaai.org/index.php/AAAI/article/view/38459) ([PDF](https://ojs.aaai.org/index.php/AAAI/article/view/38459/42421), [DOI](https://doi.org/10.1609/aaai.v40i17.38459)).
+<section class="section" id="honors">
+  <h2 class="section__title">{% include icon.html name="award" %}Honors</h2>
+  <ul class="rows">
+    <li class="row">
+      <p class="row__main">Top Universities Studentship Scheme (TUSS)</p>
+      <span class="row__date">2026</span>
+      <p class="row__sub">City University of Hong Kong</p>
+    </li>
+  </ul>
+</section>
 
-<span class='anchor' id='publications'></span>
-
-# 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/publications/persona-following.png' alt="Persona Following Is Not Selective Control" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Persona Following Is Not Selective Control: The Neutrality Gap in LLM User Simulation](https://arxiv.org/abs/2609.35036) &nbsp;[PDF](https://arxiv.org/pdf/2609.35036) &nbsp;[Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DbFv3OIAAAAJ&citation_for_view=DbFv3OIAAAAJ:u-x6o8ySG0sC)
-
-**Jiashen Ren**, Wenlin Zhang, Bohan Zhang, Xiaopeng Li, Zichuan Fu, Wanyu Wang, Junyi Li, Xiangyu Zhao
-
-*arXiv preprint arXiv:2609.35036*, 2026.
-
-<span class='show_paper_citations' data='DbFv3OIAAAAJ:u-x6o8ySG0sC'></span>
-
-Persona prompting fails selective control: changing one attribute also shifts non-target attributes, and neutrality declarations leave a residual neutrality gap.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/publications/tskm-net.png' alt="T-SKM-Net" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[T-SKM-Net: Trainable Neural Network Framework for Linear Constraint Satisfaction via Sampling Kaczmarz-Motzkin Method](https://ojs.aaai.org/index.php/AAAI/article/view/38459) &nbsp;[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/38459/42421) &nbsp;[Poster](https://ojs.aaai.org/index.php/AAAI/article/view/38459/49369) &nbsp;[Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DbFv3OIAAAAJ&citation_for_view=DbFv3OIAAAAJ:u5HHmVD_uO8C)
-
-Haoyu Zhu, Yao Zhang, **Jiashen Ren**, Qingchun Hou
-
-*Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)*, 40(17):14431–14439, 2026. *(Poster presentation.)*
-
-<span class='show_paper_citations' data='DbFv3OIAAAAJ:u5HHmVD_uO8C'></span>
-
-Linear constraint satisfaction via a trainable neural framework with a sampling Kaczmarz-Motzkin method.
-</div>
-</div>
-
-<span class='anchor' id='experience'></span>
-
-# 💼 Experience
-
-### Teaching Assistant
-<div style="display: flex; justify-content: space-between; margin-bottom: 0.5em;">
-  <div><strong>MATH241 (Calculus III)</strong> @ UIUC</div>
-  <div style="text-align: right;"><em>Sep 2025 - Dec 2025</em></div>
-</div>
-<div style="display: flex; justify-content: space-between; margin-bottom: 1em;">
-  <div><strong>MATH285 (Intro to Differential Equations)</strong> @ UIUC</div>
-  <div style="text-align: right;"><em>Jan 2025 - May 2025</em></div>
-</div>
-
-### Research Assistant
-<div style="display: flex; justify-content: space-between; margin-bottom: 0.5em;">
-  <div><strong>Machine learning &amp; data mining</strong> @ <a href="https://aml-cityu.github.io/">AML Lab</a>, CityU (<a href="https://zhaoxyai.github.io/">Prof. Xiangyu Zhao</a>)</div>
-  <div style="text-align: right; white-space: nowrap;"><em>Sep 2026 - Present</em></div>
-</div>
-<div style="display: flex; justify-content: space-between; margin-bottom: 0.5em;">
-  <div><strong>Constraint-Oriented Neural Networks</strong> @ ZJU-UIUC Institute (Prof. Qingchun Hou)</div>
-  <div style="text-align: right; white-space: nowrap;"><em>Feb 2025 - Aug 2026</em></div>
-</div>
-<div style="display: flex; justify-content: space-between; margin-bottom: 1em;">
-  <div><strong>DiffSinger-based Voice Enhancement</strong> @ Zhejiang University (Prof. Zhou Zhao)</div>
-  <div style="text-align: right; white-space: nowrap;"><em>Jun 2023 - Aug 2023</em></div>
-</div>
-
-<span class='anchor' id='education'></span>
-
-# 📖 Education
-
-### City University of Hong Kong
-**Ph.D. in Data Science**, [Applied Machine Learning Lab](https://aml-cityu.github.io/) — [Prof. Xiangyu Zhao](https://zhaoxyai.github.io/) | *Sep 2026 –*
-
-### Zhejiang University & University of Illinois at Urbana-Champaign
-**Dual B.S. in Electrical Engineering** | *Sep 2022 - Jun 2026* 
+<section class="section" id="teaching">
+  <h2 class="section__title">{% include icon.html name="presentation" %}Teaching</h2>
+  <ul class="rows">
+    <li class="row">
+      <p class="row__main">Teaching Assistant, MATH241 Calculus III</p>
+      <span class="row__date">Fall 2025</span>
+      <p class="row__sub">University of Illinois Urbana-Champaign</p>
+    </li>
+    <li class="row">
+      <p class="row__main">Teaching Assistant, MATH285 Intro to Differential Equations</p>
+      <span class="row__date">Spring 2025</span>
+      <p class="row__sub">University of Illinois Urbana-Champaign</p>
+    </li>
+  </ul>
+</section>

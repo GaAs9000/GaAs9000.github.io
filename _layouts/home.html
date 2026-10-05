@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:image" content="{{ site.author.avatar | absolute_url }}">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="nav__name" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <div class="nav__links">
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="container footer">
+      <span>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+      <span>Updated {{ site.time | date: "%b %Y" }}</span>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var external = a.protocol.indexOf('http') === 0 && a.hostname !== location.hostname;
+        if (external || a.pathname.endsWith('.pdf')) {
+          a.target = '_blank';
+          a.rel = 'noopener';
+        }
+      });
+    </script>
+  </body>
+</html>
