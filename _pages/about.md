@@ -55,7 +55,7 @@ redirect_from:
     <a class="pub__thumb" href="{{ pub.url }}">
       <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
     </a>
-    <div>
+    <div class="pub__body">
       <h3 class="pub__title"><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
       <p class="pub__authors">{{ pub.authors | replace: site.author.name, "<strong>Jiashen Ren</strong>" }}</p>
       <p class="pub__venue"><span class="pub__tag">{{ pub.tag }}</span>{{ pub.venue }}</p>
