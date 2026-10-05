@@ -23,11 +23,27 @@ Jiashen Ren is a Ph.D. student in **Data Science** at the [Applied Machine Learn
 
 
 # 🔥 News
+- *2026.09*: &nbsp;📄 Preprint **Persona Following Is Not Selective Control** is now on [arXiv](https://arxiv.org/abs/2609.35036).
 - *2026.03*: &nbsp;🎉 **T-SKM-Net** published in [AAAI 2026 proceedings](https://ojs.aaai.org/index.php/AAAI/article/view/38459) ([PDF](https://ojs.aaai.org/index.php/AAAI/article/view/38459/42421), [DOI](https://doi.org/10.1609/aaai.v40i17.38459)).
 
 <span class='anchor' id='publications'></span>
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/publications/persona-following.png' alt="Persona Following Is Not Selective Control" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Persona Following Is Not Selective Control: The Neutrality Gap in LLM User Simulation](https://arxiv.org/abs/2609.35036) &nbsp;[PDF](https://arxiv.org/pdf/2609.35036) &nbsp;[Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DbFv3OIAAAAJ&citation_for_view=DbFv3OIAAAAJ:u-x6o8ySG0sC)
+
+**Jiashen Ren**, Wenlin Zhang, Bohan Zhang, Xiaopeng Li, Zichuan Fu, Wanyu Wang, Junyi Li, Xiangyu Zhao
+
+*arXiv preprint arXiv:2609.35036*, 2026.
+
+<span class='show_paper_citations' data='DbFv3OIAAAAJ:u-x6o8ySG0sC'></span>
+
+Persona prompting fails selective control: changing one attribute also shifts non-target attributes, and neutrality declarations leave a residual neutrality gap.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/publications/tskm-net.png' alt="T-SKM-Net" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
