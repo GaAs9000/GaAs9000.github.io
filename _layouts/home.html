@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.description | escape }}">
-    <meta property="og:image" content="{{ site.author.avatar | absolute_url }}">
+    <meta property="og:image" content="{{ '/images/og-card.png' | absolute_url }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Jiashen Ren, Ph.D. student in Data Science at City University of Hong Kong">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
