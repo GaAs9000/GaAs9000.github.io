@@ -33,9 +33,11 @@
       {{ content }}
     </main>
 
-    <footer class="container footer">
-      <span>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
-      <span>Updated {{ site.time | date: "%b %Y" }}</span>
+    <footer class="container">
+      <div class="footer">
+        <span>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+        <span>Updated {{ site.time | date: "%b %Y" }}</span>
+      </div>
     </footer>
 
     <script>
