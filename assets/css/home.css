@@ -78,7 +78,7 @@ p {
 }
 
 .container {
-  max-width: 720px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
@@ -92,7 +92,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 720px;
+  max-width: 840px;
   margin: 0 auto;
   padding: clamp(14px, 3vw, 20px) var(--gutter);
   background: color-mix(in srgb, var(--bg) 85%, transparent);
@@ -128,7 +128,7 @@ p {
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: flex-end;
-  gap: 24px 12px;
+  gap: 24px clamp(12px, 2.5vw, 28px);
   padding: clamp(32px, 8vw, 64px) 0 24px;
 }
 
@@ -171,7 +171,7 @@ p {
 
 .hero__photo {
   flex: none;
-  width: clamp(112px, 22vw, 160px);
+  width: clamp(112px, 22vw, 176px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   -webkit-mask-image:
@@ -318,7 +318,7 @@ p {
 
 .pub__thumb {
   display: block;
-  flex: 1 1 200px;
+  flex: 1 1 224px;
   max-width: 100%;
   padding: 8px;
   border: 1px solid var(--line);
